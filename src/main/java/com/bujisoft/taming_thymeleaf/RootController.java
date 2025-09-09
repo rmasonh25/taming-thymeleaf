@@ -4,8 +4,8 @@
  * Copyright (c) 2025 Bujisoft
  * Author: Robert Hendricks
  * File: RootController.java
- * Created on: 2025-09-09 03:43
- * Last modified: 2025-09-09 03:43
+ * Created on: 2025-09-09 11:08
+ * Last modified: 2025-09-09 11:08
  *
  */
 
@@ -25,7 +25,7 @@ public class RootController {
 
     @GetMapping
     public String index(Model model) {
-        model.addAttribute("pageTitle", "Taming Thymeleaf");
+        model.addAttribute("pageTitle", "Bujisoft");
         model.addAttribute("scientists", List.of("Albert Einstein", "Niels Bohr", "James Clerk Maxwell"));
         return "index";
     }
