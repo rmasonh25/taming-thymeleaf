@@ -4,8 +4,8 @@
   ~ Copyright (c) 2025 Bujisoft
   ~ Author: Robert Hendricks
   ~ File: index.html
-  ~ Created on: 2025-09-09 03:27
-  ~ Last modified: 2025-09-09 03:27
+  ~ Created on: 2025-09-09 03:44
+  ~ Last modified: 2025-09-09 03:44
   ~
   -->
 
@@ -18,7 +18,13 @@
     <title>Taming Thymeleaf </title>
 </head>
 <body>
-<h1>Taming Thymeleaf</h1>
-<div th:text="|Sum of 2+2 = ${2+2}|"></div>
+<h1 th:text ="${pageTitle}">Taming Thymeleaf</h1>
+<div>
+    <ul>
+        <li th:each="scientist : ${scientists}">
+            <span th:text="${scientist}"/>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
